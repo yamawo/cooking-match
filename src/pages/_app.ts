@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+interface State {
+  isSpinner: boolean
 }
 
-export default MyApp;
+export default class extends App<Record<string, unknown>, Record<string, unknown>, State>
