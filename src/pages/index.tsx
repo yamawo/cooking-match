@@ -1,20 +1,12 @@
-import Head from "next/head";
+import { NextPage } from "next";
+import Router from "next/router";
+import React from "react";
 
-const IndexPage = () => {
-  return (
-    <div>
-      <Head>
-        <title>YAMAO's キッチン</title>
-        {/* <link rel="icon" href="/favicon.ico" /> */}
-      </Head>
-
-      <main>
-        <p>作成中</p>
-      </main>
-
-      <footer>none</footer>
-    </div>
-  );
+const IndexPage: NextPage = () => {
+  React.useEffect(() => {
+    void Router.replace("/top");
+  }, []);
+  return null;
 };
 
 export default IndexPage;
